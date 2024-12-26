@@ -9,6 +9,9 @@ fragment Post on Post {
 	coverImage {
 		url
 	}
+	tags {
+		name
+	}
 	publishedAt
 	slug
 	brief

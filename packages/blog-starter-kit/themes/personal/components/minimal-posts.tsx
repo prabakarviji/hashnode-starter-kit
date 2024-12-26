@@ -8,7 +8,7 @@ type Props = {
 
 export const MinimalPosts = ({ posts }: Props) => {
 	return (
-		<section className="flex w-full flex-col items-stretch gap-10 lg:max-w-lg">
+		<section className="flex w-full flex-col items-stretch gap-10">
 			{posts.map((post) => (
 				<MinimalPostPreview
 					key={post.id}
@@ -18,8 +18,8 @@ export const MinimalPosts = ({ posts }: Props) => {
 						name: post.author.name,
 					}}
 					slug={post.slug}
-					commentCount={post.comments?.totalDocuments}
-				/>
+					commentCount={post.comments?.totalDocuments} 
+					tags={post.tags?.map(tag => tag.name) || []}/>
 			))}
 		</section>
 	);

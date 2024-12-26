@@ -59,16 +59,18 @@ export const PersonalHeader = () => {
 		</ul>
 	);
 
+
 	return (
 		<header className="grid grid-cols-2 items-center gap-5 ">
 			<div className="col-span-full md:col-span-1">
 				<h1>
 					<Link
-						className="flex flex-row items-center gap-2 text-lg font-bold leading-tight tracking-tight text-black dark:text-white"
-						href="/"
+						className="flex flex-row items-center gap-2 text-lg leading-tight tracking-tight text-blue-700 dark:text-white underline"
+						href="https://prabs.xyz"
 						aria-label={`${publication.author.name}'s blog home page`}
+						title='prabs.xyz'
 					>
-						{publication.author.profilePicture && (
+						{/* {publication.author.profilePicture && (
 							<img
 								className="block h-8 w-8 rounded-full fill-current"
 								alt={publication.author.name}
@@ -78,8 +80,8 @@ export const PersonalHeader = () => {
 									c: 'face',
 								})}
 							/>
-						)}
-						{publication.title}
+						)} */}
+						{"prabs.xyz"}
 					</Link>
 				</h1>
 			</div>
