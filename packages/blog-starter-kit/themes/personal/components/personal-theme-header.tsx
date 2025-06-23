@@ -66,11 +66,11 @@ export const PersonalHeader = () => {
 				<div className="flex justify-between">
 					<h1>
 						<Link
-							className="flex flex-row items-center gap-2 text-lg font-bold leading-tight tracking-tight text-black dark:text-white"
-							href="/"
+							className="flex flex-row items-center gap-2 text-lg font-medium leading-tight tracking-tight text-blue-700 dark:text-blue-700"
+							href="https://prabs.xyz"
 							aria-label={`${publication.author.name}'s blog home page`}
 						>
-							{publication.author.profilePicture && (
+							{/* {publication.author.profilePicture && (
 								<img
 									className="block h-8 w-8 rounded-full fill-current"
 									alt={publication.author.name}
@@ -80,8 +80,8 @@ export const PersonalHeader = () => {
 										c: 'face',
 									})}
 								/>
-							)}
-							{publication.title}
+							)} */}
+							{"_ prabs.xyz"}
 						</Link>
 					</h1>
 					<ToggleTheme className="md:hidden" />

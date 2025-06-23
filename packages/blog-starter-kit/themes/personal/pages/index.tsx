@@ -85,6 +85,7 @@ export default function Index({ publication, initialPosts, initialPageInfo }: Pr
 				</Head>
 				<Container className="mx-auto flex max-w-3xl flex-col items-stretch gap-10 px-5 py-10">
 					<PersonalHeader />
+					<p className='font-medium text-gray-500'>I used to write about #iOS,  #mobile_apps,  #ai,  #ml and #f1</p>
 					{posts.length > 0 && <MinimalPosts context="home" posts={posts} />}
 					{!loadedMore && pageInfo.hasNextPage && pageInfo.endCursor && (
 						<button onClick={loadMore}>
